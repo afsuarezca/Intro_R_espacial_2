@@ -22,13 +22,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 En primer lugar, es importante recordar que la organización es clave cuando se está generando un nuevo código. En este sentido, le recomendamos que cree una carpeta para cada nuevo proyecto. Puede hacer esto como un proyecto de Rstudio si lo desea (consulte Archivo> Nuevo proyecto) o simplemente como una carpeta. Dentro de esta carpeta, cree una carpeta de datos donde guardará sus datos sin procesar. Puede almacenar algunos objetos intermedios en otra subcarpeta. También cree una carpeta para su código R y una carpeta para guardar sus figuras.
 
-> R
-> data
-> fig
+> R  
+> data   
+> fig  
+
 
 ## Caso de estudio
 
-Durante el curso utilizaremos datos descargados de la plataforma GBIF, los cuales han sido filtrados y organizados por los instructores del curso. Las tablas contienen los registros de mamíferos de Colombia por especie y localidad obtenidos mediante el uso de cámaras trampa y especímenes de colección. Todos los registros duplicados han sido eliminados. Estos datos deben utilizarse únicamente durante el curso y no son confiables para el desarrollo de análisis más robustos.
+Durante el curso utilizaremos datos ya descargados de la plataforma GBIF, los cuales han sido filtrados y organizados por los instructores del curso. Las tablas contienen los registros de mamíferos de Colombia por especie y localidad obtenidos mediante el uso de cámaras trampa y especímenes de colección. Todos los registros duplicados han sido eliminados. Estos datos deben utilizarse únicamente durante el curso y no son confiables para el desarrollo de análisis más robustos.
 
 Primero, cargaremos los datos usando un la función `read_csv()` que se encuentra en un paquete incluido en tidyverse llamado `readr`. Aunque existen otras funciones como `read.csv()`, hemos decidido utilizar `read_csv()` ya que realiza comprobaciones adicionales sobre la estructura de los datos. Además, esta función imprime por defecto las columnas en forma de resumen. Veamos cómo:
 

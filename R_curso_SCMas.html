@@ -380,11 +380,13 @@ una carpeta de datos donde guardará sus datos sin procesar. Puede
 almacenar algunos objetos intermedios en otra subcarpeta. También cree
 una carpeta para su código R y una carpeta para guardar sus figuras.</p>
 <blockquote>
-<p>R data fig</p>
+<p>R<br />
+data<br />
+fig</p>
 </blockquote>
 <div id="caso-de-estudio" class="section level2">
 <h2>Caso de estudio</h2>
-<p>Durante el curso utilizaremos datos descargados de la plataforma
+<p>Durante el curso utilizaremos datos ya descargados de la plataforma
 GBIF, los cuales han sido filtrados y organizados por los instructores
 del curso. Las tablas contienen los registros de mamíferos de Colombia
 por especie y localidad obtenidos mediante el uso de cámaras trampa y
@@ -652,7 +654,7 @@ para todas las variables; si este no fuese el caso, tendríamos que
 volver al proveedor de datos y averiguar cuáles datos son los correctos.
 En nuestro caso, esto no es necesario y podemos eliminar los registros
 duplicados.</p>
-<p>Para ello, podemos utilizar la función <code>duplicated()</code>, la
+<p>Para ello, podemos utilizar la función <code>distinct()</code>, la
 cual selecciona distintas entradas:</p>
 <pre class="r"><code>localidades2 &lt;- distinct(localidades)
 
